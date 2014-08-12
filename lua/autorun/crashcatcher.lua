@@ -1,4 +1,6 @@
-
+--[[
+	An addon to catch crazy ragdolls and hopefully stop them before they can crash the server
+]]--
 hook.Add("Think","AMB_CrashCatcher",function()
 	for k, ent in pairs(ents.FindByClass("prop_ragdoll")) do
 		if IsValid(ent) then
